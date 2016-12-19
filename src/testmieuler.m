@@ -1,0 +1,22 @@
+%       testmieuler.m
+%
+%       Resolución de EDIFs utilizando mieuler.m:
+%       [Implementación del método de Euler para la resolución de EDIFs]
+%
+%       Datos de entrada:
+%           ninguno
+%           recibe los datos desde mispracticas.m
+%
+%       Datos de salida:
+%           gráficas obtenidas por misgraficas.m
+%
+%       Utiliza:
+%           mispracticas.m
+%           misgraficas.m
+%           mieuler.m
+
+
+
+mispracticas;                   % Carga los datos de la EDIF
+[t, u] = mieuler(f, x0, intervalo, N);   % Resuelve la EDIF por el método de Euler
+misgraficas;                    % Pinta las gráficas de la solución
